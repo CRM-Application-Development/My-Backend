@@ -17,6 +17,7 @@ pipeline {
                  docker build -t . shani877/backend:latest
                  docker push shani877/backend:latest
                  docker rmi shani877/backend:latest
+                 kubectl apply -f ./yml/
                  '''
             }
         }
